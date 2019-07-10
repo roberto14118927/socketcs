@@ -1,24 +1,22 @@
 
-
-
-import Server from "./classes/server";
-import { SERVER_PORT } from "./global/environment";
-import router from "./routes/router";
+import Server from './classes/server';
+import { SERVER_PORT } from './global/environment';
+import router from './routes/router';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 
 const server = Server.instance;
 
-// bodyParser
-server.app.use(bodyParser.urlencoded({ extended: true }));
+server.app.use(bodyParser.urlencoded({ extended: true}));
 server.app.use(bodyParser.json());
 
-// Rutas de servicio
-server.app.use('/', router)
+//Rutas de Servicio
+server.app.use('/',router);
 
-// Configuracion de cors
-server.app.use(cors({ origin: true, credentials: true }));
+//Configuración de los cors
+server.app.use(cors({origin: true, credentials:true}));
 
-server.start(() => {
-    console.log(`Servidor Corriendo en el puerto ${SERVER_PORT}`)
+server.start(()=>{
+    console.log(`Servidor Corriendo en el puerto ${SERVER_PORT}`);
 })
+
