@@ -7,6 +7,7 @@ Reconstruir modulos de Node
 Generar el DIST
 ```
 2.- npm install -g typescript
+2.- npm install -g nodemon
 ejecutar en modo administrador Windows
 3.- tsc -w
 
