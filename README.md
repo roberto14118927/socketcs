@@ -10,6 +10,7 @@ Generar el DIST
 2.- npm install -g nodemon
 ejecutar en modo administrador Windows
 3.- tsc -w
+    Trasnpilar codigo a javascript
 
 ```
 
