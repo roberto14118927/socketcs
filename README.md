@@ -1,18 +1,19 @@
 # Socket-Server
 Reconstruir modulos de Node
 ```
-npm install
+1.- npm install
 ```
 
 Generar el DIST
 ```
-tsc -w
-si no esta instalado 
-npm install -g typescript
+2.- npm install -g typescript
+ejecutar en modo administrador Windows
+3.- tsc -w
+
 ```
 
 Levantar Servidor, cualquiera de estos dos comandos
 ```
-nodemon dist/
+4.- nodemon dist/
 node dist
 ```

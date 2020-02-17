@@ -4,7 +4,6 @@ import { isObject } from 'util';
 
 
 
-
 export const desconectar = (cliente: Socket) => {
 
     cliente.on('disconnect', () => {
